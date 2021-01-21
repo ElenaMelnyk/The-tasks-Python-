@@ -1,0 +1,34 @@
+# Дано натуральне число. Визначити, чи буде це число: парним, кратним 4.
+
+x = int (input ("Input a natural number "))
+print ("True") if x % 4 == 0 else print ("False")
+
+#Дано натуральне число. Визначити, чи буде це число: непарним, кратним 5.
+
+x = int (input ("Input a natural number "))
+print ("True") if x % 5 == 0 and x % 2 == 0 else print ("False")
+
+#Дано дійсне число. Визначити, яке це число: додатне, від’ємне, нуль.
+
+x = int (input ("Input a natural number "))
+if x > 0:
+    print ("pozitive number")
+elif x < 0:
+    print ("negative number")
+else:
+    print ("Zero")
+
+#Дано номер місця у плацкартному вагоні. Визначити, яке це місце: верхнє або нижнє, в купе або бічне.
+
+x = int (input ("Input your place number "))
+
+if x <= 0 or x > 100:
+    print ("Wrong place")
+elif x % 2 == 0 and x < 66:
+    print ("Uper place In a compartment")
+elif x % 2 == 0 and x > 66:
+    print ("Uper place In a reserved")
+elif x % 2 != 0 and x < 66:
+    print ("Down place In a compartment")
+else:
+    print ("Down place In a reserved")
