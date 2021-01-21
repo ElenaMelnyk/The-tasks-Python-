@@ -1,0 +1,6 @@
+print ("This program calculate the size of information")
+x = int (input ("Inpt the size of information in byte: "))
+b = x / 1024
+c = x / (1024**2)
+print (x, "= ", b, "KB (kilobyte)")
+print (x, "= ", c, "MB (megabyte)")
