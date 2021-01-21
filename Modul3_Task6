@@ -1,0 +1,14 @@
+#Було залито повний бак пального (fuelCapacity). Якщо пального залишилося менше ніж 10 відсотків баку, 
+#лампочка датчика загориться червоним кольором, в іншому випадку – залишиться зеленою. 
+#Змінна fuelAmount зберігає значення об’єму залишку пального в баку авто. 
+#Напишіть програму, яка імітує процес виведення кольору лампи в залежності від введених значень змінних fuelAmount і fuelCapacity 
+
+fuelCapacity = float (input ("How much fuel was poured? "))
+fuelAmount = float (input ("How mach fuel is left? "))
+
+if fuelAmount > fuelCapacity:
+    print ("Error")
+elif fuelAmount < fuelCapacity * 0.1:
+    print ("Red")
+else:
+    print ("Green")
