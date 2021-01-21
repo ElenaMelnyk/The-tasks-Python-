@@ -1,0 +1,9 @@
+print ("This program calculate the area and perimeter of the circle for a given radius.")
+r = int (input ("Input the radius of the circle. R: "))
+pi = 3.14159265359
+P = 2 * pi * r
+A = pi * r **2
+print ("The perimeter of the circle is: %.2f" % (P))
+print ("The area of the circle is: %.2f" % (A))
+
+##Я не змогла імпортувати Пі з бібліотеки math
