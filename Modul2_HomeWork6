@@ -1,0 +1,12 @@
+#This program calculate the length of the hypotenuse of a right triangle
+from math import sqrt
+
+a = int (input ("Input the first leg of a right triangle. A: "))
+b = int (input ("Input the second leg of a right triangle. B: "))
+while a <= 0 or b <= 0:
+    print ("Wrong! Input again")
+    a = int (input ("Input the first leg of a right triangle. A: "))
+    b = int (input ("Input the second leg of a right triangle. B: ")) 
+else:
+    c = sqrt (a ** 2 + b ** 2)
+    print ("The length of the hypotenuse is: %.2f" %(c))
