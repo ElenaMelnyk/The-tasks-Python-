@@ -1,0 +1,7 @@
+#This program calculate weight in tons and kilograms
+print ("This program calculate weight in tons and kilograms")
+x = int (input ("Inpt the weight in grams: "))
+b = x / 1000
+c = x * 1.0E-6
+print (x, "= ", b, "kilograms")
+print (x, "= ", c, "tons")
