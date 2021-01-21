@@ -1,3 +1,4 @@
+#Write a Python program to print a happy face to the screen
 p = (" ")
 q = input ("Pleas, input a symbol ")
 a = input ("Pleas, input a number ")
