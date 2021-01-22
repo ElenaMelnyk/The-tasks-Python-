@@ -1,0 +1,25 @@
+#Користувач вводить число, програма повинна вивести на екран його опис. Наприклад, «додатне однозначне число», «від’ємне двозначне» тощо.
+
+print ("The program make the analysis of the characteristics of the numbers:\npositive, negative and the number of characters that make up the number.")
+
+x = int (input ("Input the number: "))
+if x == 0:
+    print ("Zero")
+elif x > 999 or x < -999:
+    print ("The analysis not held on this area")
+elif x > 0:
+    print ("Positive")
+    if x <= 999 and x >= 100 or x >= -999 and x <= -100:
+        print ("A three-digit number.")
+    elif x <= 99 and x >= 10 or x >= -99 and x <= -10:
+        print ("A  ambiguous number.")
+    elif x <= 9 and x > 0  or x >= -9 and x < 0:
+        print ("A unique number")
+elif x < 0:
+    print ("Negative")
+    if x <= 999 and x >= 100 or x >= -999 and x <= -100:
+        print ("A three-digit number.")
+    elif x <= 99 and x >= 10 or x >= -99 and x <= -10:
+        print ("A  ambiguous number.")
+    elif x <= 9 and x > 0  or x >= -9 and x < 0:
+        print ("A unique number")
