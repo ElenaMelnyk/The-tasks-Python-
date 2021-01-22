@@ -1,0 +1,31 @@
+##Task 4.
+##Надайте значення наступним змінним:
+##a = 2.5, b = 3.7, c = 4, d = 8
+##2. Виконайте обчислення expr = (a + b) * c / d
+##3. Перетворіть значення змінних та результату до рядкового вигляду та присвойте змінній exprString рядок,
+##   в якому міститься вираз з п.2, але ідентифікатори замінені значенням змінних.
+
+a = 2.5
+print ("a = ", a)
+b = 3.7
+print ("b = ", b)
+c = 4
+print ("c = ", c)
+d = 8
+print ("d = ", d)
+expr = (a + b) * c / d
+print ("expr = ", expr)
+print ()
+a1 = str (a)
+print ("a1 = ", a1, type (a1))
+b1 = str (b)
+print ("b1 = ", b1, type (b1))
+c1 = str (c)
+print ("c1 = ", c1, type (c1))
+d1 = str (d)
+print ("d1 = ", d1, type (d1))
+expr1 = str (expr)
+print ("expr1 = ", expr1, type (expr1))
+print ()
+exprString = "(2.5 + 3.7) * 4 / 8"
+print ("exprString = ", exprString)
