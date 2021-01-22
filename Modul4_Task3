@@ -1,0 +1,17 @@
+##В змінну stringHamlet_1 запишіть рядок “To be or not to be.”
+##Визначте довжину рядка.
+##В змінну stringHamlet_2 запишіть рядок “That is the question.”
+##В змінну stringHamlet запишіть рядок, що є конкатенацією рядків stringHamlet_1 та stringHamlet_2.
+##В змінну stringHamletTrinity запишіть рядок, що є повторенням тричі рядка stringHamlet
+
+stringHamlet_1 = "To be or not to be."
+print ("stringHamlet_1 : ", stringHamlet_1)
+x = len (stringHamlet_1)
+print ("The count of symbol in line is : ", x)
+stringHamlet_2 = "That is the question."
+print ("stringHamlet_2 : ", stringHamlet_2)
+stringHamlet = stringHamlet_1 + " " + stringHamlet_2
+print ("stringHamlet : ", stringHamlet)
+stringHamletTrinity = (stringHamlet + " ") * 3
+print ()
+print ("stringHamletTrinity : " , stringHamletTrinity)
