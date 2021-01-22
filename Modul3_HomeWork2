@@ -1,0 +1,25 @@
+#Залежно від вибору користувача, обчислити площу або прямокутника, або трикутника, або круга. 
+#Якщо обрані прямокутник або трикутник, то треба запросити довжини сторін; круга – його радіус.
+
+from math import sqrt
+print ("This program calculate the area of rectangle, triangle or circle.")
+x = int (input ("Do You want to calculate the area of a: \nrectangle - input 1 \ntriangle - input 2 \n circle - input 3 \nInput the number:  "))
+
+if x == 1:
+    a = int (input ("Input the height of the rectangle "))
+    b = int (input ("Input the width of the rectangle "))
+    s = 2 * (a + b)
+    print ("The area of your rectangle is ", s)
+elif x == 2:
+    a = int (input ("Input the size of the first side of the triangle "))
+    b = int (input ("Input the size of the second side of the triangle "))
+    c = int (input ("Input the size of the third side of the triangle "))
+    p = (a + b + c) / 2
+    s = sqrt (p * (p - a) * (p - b) * (p - c))
+    print ("The area of your triangle is %.2f" %(s))
+elif x == 3:
+    a = int (input ("Input the radius of the circle "))
+    s = 3.14 * a ** 2
+    print ("The area of your circle is ", s)
+else:
+    print ("Error")
