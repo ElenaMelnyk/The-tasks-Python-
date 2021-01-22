@@ -1,0 +1,18 @@
+##Відома грошова сума. Розміняти її купюрами 200, 100, 10 і монетою 1 грн., якщо це можливо.
+
+x = int (input ("How much cash you have? "))
+a = x // 200
+y = x % 200 // 100
+z = ((x % 200) % 100) // 10
+w = ((x % 200) % 100) % 10
+if x <=0:
+    print ("Wrong!")
+else:
+    if a > 0:
+        print (a, "by 200 ye")
+    if y > 0:
+        print (y, "by 100 ye")
+    if z > 0:
+        print (z, "by 10 ye")
+    if w > 0:
+        print (w, "by 1 ye")
