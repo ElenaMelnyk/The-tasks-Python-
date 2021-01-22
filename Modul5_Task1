@@ -1,0 +1,12 @@
+##В змінну myString запишіть рядок “I like Python! It is easy.”
+##Виведіть в консоль 1-й, 3-й та 5-й символи рядка.
+##В змінну myStringPy запишіть зріз рядка таким чином, щоб виділити слово “Python”.
+##Виведіть в консоль (-1)-й, (-3)-й та (-5)-й символи рядка.
+
+myString = "I like Python! It is easy."
+print (myString)
+print (myString [0], myString [2], myString [4])
+myStringPy = myString [7:13]
+print (myStringPy)
+print (myStringPy [0], myStringPy [2], myStringPy [4])
+
