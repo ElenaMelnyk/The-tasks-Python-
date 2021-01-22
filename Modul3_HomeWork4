@@ -1,0 +1,7 @@
+## Чи можна в квадратному залі площею S помістити круглу сцену радіусом R так, щоб від стіни до сцени був прохід не менше K?
+
+x = int (input ("Input the side of the hall " ))
+y = int (input ("Input the radius of the stage "))
+k = int (input ("Input necessary distance between the wall and the end of the stage "))
+
+print ("True") if k <= x / 2 - y else print ("False")
