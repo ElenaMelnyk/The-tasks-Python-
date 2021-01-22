@@ -1,0 +1,25 @@
+##Виведіть код символів ‘A’, ‘a’, ‘Z’, ‘z’.
+##Виведіть символ за кодом: 28, 32, 46, 52, 200, 255.
+
+x = ord ("A")
+print ("The number used to represent a given character - 'A': ", x)
+q = ord ("a")
+print ("The number used to represent a given character - 'a': ", q)
+s = ord ("Z")
+print ("The number used to represent a given character - 'Z': ", s)
+c = ord ("z")
+print ("The number used to represent a given character - 'z': ", c)
+
+r = chr (28)
+print ("The character associated with a given code - '28': ", r)   ## It is '\x1c'
+i = chr (32)
+print ("The character associated with a given code - '32': ", i)
+o = chr (46)
+print ("The character associated with a given code - '46': ", o)
+l = chr (52)
+print ("The character associated with a given code - '52': ", l)
+m = chr (200)
+print ("The character associated with a given code - '200': ", m)
+b = chr (255)
+print ("The character associated with a given code - '255': ", b)
+
