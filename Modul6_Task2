@@ -1,0 +1,26 @@
+##Зрушити елементи масиву у вказаному напрямку (вліво або вправо) і на вказане число кроків. Вивільнені елементи заповнити нулями. 
+##Виводити масив після кожного кроку.
+
+##Заповнити одновимірний масив випадковими числами. Знайти і вивести на екран найбільший його елемент і порядковий номер цього елемента.
+import random
+
+import random
+
+countNumbers = int (input ("Input count of numbers: "))
+numbers = []
+for i in range (countNumbers):
+    numbers.append (random.randint(1,100))
+print (numbers)
+
+position = input ("Input the count of position: ")
+direction = input ("Direction left or right? L/R: ")
+for i in range (int (position)):
+    if direction.upper() == "L":
+        numbers.append (0)
+        print (numbers)
+    elif direction.upper() == "R":
+        numbers.insert (0, 0)
+        print (numbers)
+else:
+    print ("Error!")
+
