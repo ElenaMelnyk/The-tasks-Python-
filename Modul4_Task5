@@ -1,0 +1,26 @@
+##Task 5
+##В змінну stringFirst запишіть рядок “I like programming. And I like Python.”
+##Виведіть вміст рядка, всі літери uppercase.
+##Виведіть вміст рядка, всі літери lowercase.
+##Розділіть рядок в список listSpace, використовуючи пробіл.
+##Розділіть рядок в список listDot, використовуючи крапку.
+##З’єднайте елементи списку listSpace в новий рядок stringSecond, використовуючи символ ‘-’. Перегляньте результат.
+##Визначте початковий індекс входження підрядка «Python» в рядок stringFirst.
+##Створіть рядок stringThird, замінивши в рядку stringSecond слово “like” на “know”
+
+stringFirst = "I like programming. And I like Python."
+print (stringFirst)
+stringFirstUp = stringFirst.upper()
+print (stringFirstUp)
+stringFirstLo = stringFirst.lower()
+print (stringFirstLo)
+stringFirstSpace = stringFirst.split()
+print (stringFirstSpace) 
+stringFirstDot = stringFirst.split(".")
+print (stringFirstDot)
+stringSecond = '-' .join(stringFirstSpace)
+print (stringSecond)
+a = stringFirst.find ('Python')
+print (a)
+stringThird = stringSecond.replace ("like", "know")
+print (stringThird)
