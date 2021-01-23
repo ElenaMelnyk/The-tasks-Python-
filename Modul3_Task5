@@ -1,0 +1,19 @@
+bal = int (input ("Input the number of points that you're scored "))
+
+if bal < 0:
+    print ("Invalid data")
+else:
+    if bal >= 90:
+        print ("A")
+    elif bal <= 89:
+        print ("B")
+    elif bal <= 79:
+        print ("C")
+    elif bal <= 69:
+        print ("D")
+    elif bal <= 59:
+        print ("E")
+    elif bal <= 49:
+        print ("F")    
+    elif bal <= 35:
+        print ("Fx")
