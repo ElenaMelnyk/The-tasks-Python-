@@ -1,0 +1,38 @@
+##Записати в рядок декілька афоризмів з філософії Пайтона:
+##  Beautiful is better than ugly
+##  Explicit is better than implicit
+##  Simple is better than complex
+##  Complex is better than complicated
+##  Readability counts
+##Вивести весь текст у верхньому регістрі (всі великі літери)
+##Вивести весь текст у нижньому регістрі (всі великі літери)
+##
+##Задано чотирицифрове натуральне число. 
+##Знайти добуток цифр цього числа.
+##Записати число в реверсному порядку.
+
+
+a = '''Beautiful is better than ugly
+\nExplicit is better than implicit
+\nSimple is better than complex
+\nComplex is better than complicated
+\nReadability counts
+'''
+print ("Original")
+print (a)
+print ("Lower")
+b = a.lower ()
+print (b)
+print("Upper")
+c = a.upper ()
+print (c)
+print ()
+
+
+x = 1234
+y = str (x)
+sum_x = int (y [0]) + int (y [1]) + int (y [2]) + int (y [3])
+print ("x = ", x)
+print ("sum_x = ", sum_x)
+revers_x = int (y [3] + y [2] + y [1] + y [0])
+print ("revers_x = ", revers_x)
