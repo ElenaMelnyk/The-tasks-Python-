@@ -1,0 +1,35 @@
+##1. У масиві знайти елементи, які в ньому зустрічаються тільки один раз, і вивести їх на екран.
+##Тобто знайти і вивести унікальні елементи масиву.
+
+import random
+countNumbers = 20
+numbers = []
+for i in range (countNumbers):
+    numbers.append (random.randint(1,15))
+print (numbers)
+print("Unique number is:")
+for item in numbers:
+    if numbers.count (item) == 1:
+       print (item)
+
+##У масиві випадкових цілих чисел поміняти місцями мінімальний і максимальний елементи.
+
+import random
+countNumbers = 20
+numbers = []
+print ("First list")
+for i in range (countNumbers):
+    numbers.append (random.randint(1,100))
+    print ("%d, " %numbers[i], end = "")
+
+print ()
+print ("Second list")
+minNum = min(numbers)
+maxNum = max(numbers)
+
+temp = numbers[numbers.index(minNum)]
+numbers[numbers.index(minNum)] = numbers[numbers.index(maxNum)]
+numbers[numbers.index(maxNum)] = temp
+
+for i in numbers:
+    print ("%d, " %i, end = "")
