@@ -1,0 +1,14 @@
+##Task 4.
+##Введіть значення height – ріст гравця та maxheight, що характеризує максимальний ріст для участі у змаганнях.
+##Опишіть конструкцію розгалуження, в якій у випадку зросту гравця, що перевищує допустимий, виводилось повідомлення: «Не допущено!»В протилежному разі: «Бажаємо успішної гри!»
+
+height = int (input ("Input your height please "))
+maxheight = int (input ("Input maxheight please "))
+
+if height <= 0 :
+    print ("Error")
+elif height > maxheight:
+    print ("Sorry, You are not allowed.")
+else:
+    print ("Have a good game!")
+
