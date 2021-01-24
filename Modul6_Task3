@@ -33,3 +33,27 @@ numbers[numbers.index(maxNum)] = temp
 
 for i in numbers:
     print ("%d, " %i, end = "")
+    
+
+##Визначити, яке число в масиві зустрічається найчастіше.
+import random
+
+countNumbers = 20
+numbers = []
+print ("List")
+for item in range (countNumbers):
+    numbers.append (random.randint(1,15))
+    print ("%2d, " %numbers[item], end = "")
+
+print ()
+countOfNumbers = []
+i = 0
+print ("The list with a count of numbers ")
+for item in numbers:
+    countOfNumbers.append (numbers.count(item))
+    print ("%2d, " %countOfNumbers[i], end = "")
+    i += 1
+
+print ()
+print ("The number most common in the array is: ", numbers[countOfNumbers.index (max (countOfNumbers))])
+
