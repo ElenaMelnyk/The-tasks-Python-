@@ -1,0 +1,21 @@
+##Випадкові числа в діапазоні від -5 до 5 розкласти на два списки:
+##в один помістити тільки додатні, у другий - тільки від’ємні.
+##Числа, рівні нулю, ігнорувати. Вивести на екран всі згенеровані випадкові числа
+##і елементи обох списків.
+
+import random
+list1 = []
+list2 = []
+list3 = []
+
+for item in range (11):
+    element = int (random.randint (-5,5))
+    list1.append (element)
+    if element > 0:
+        list2.append (element)
+    elif element < 0:
+        list3.append (element)
+
+print ("The list whith all numbers: ", list1)
+print ("The list with positive numbers: ", list2)
+print ("The list whith negative numbers: ", list3)
