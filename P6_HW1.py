@@ -1,0 +1,35 @@
+##Заповнити один список випадковими числами, інший - введеними з клавіатури числами,
+##в третій записати суми відповідних елементів перших двох. Вивести вміст списків на екран.
+
+
+import random
+## The First list
+list1 = []
+for item_list1 in range (0,15):
+    list1.insert (item_list1, (random.randint (1,10))) 
+
+##The Second list
+str_list2 = input ("Input the number: ")
+list2 = str_list2.split ()
+for i in range (0, len(list2)):
+    list2[i] = int (list2 [i])
+temp = []
+if len(list1) > len(list2):
+    temp = list1
+    list1 = list2
+    list2 = temp
+print ()
+print ("The first list: ", list1 )
+print ()
+print ("The second list: ", list2 )
+print ()
+
+##The Third list
+list3 = []
+for item in range (0, len(list1)):
+    list3.append(list1[item] + list2[item])
+dif = len(list2) - len(list1)
+for item_list3 in range (len(list1), len(list1) + dif):
+    list3.append (list2[item_list3])
+
+print ("The third list is: ", list3)
