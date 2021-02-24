@@ -8,4 +8,4 @@ def list_of_multiples (num, length):
     
 num = int (input ("Input first number "))
 length = int (input ("Input second number "))
-print (list_of_multiples (num, length))
+list_of_multiples (num, length)
