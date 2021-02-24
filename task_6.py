@@ -11,7 +11,7 @@ def date_formatted (date):
     return rev_date
 
 date = input ("Input the date ")
-print (date_formatted (date))
+date_formatted (date)
 
 
 
