@@ -23,4 +23,4 @@ def vol_shell (r1, r2):
 
 r1 = int (input ("Input the radius of outer-sphere "))
 r2 = int (input ("Input the radius of inner-sphere "))
-print (vol_shell (r1, r2))
+vol_shell (r1, r2)
